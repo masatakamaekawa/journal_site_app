@@ -17,5 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-route::get('items',[App\Http\Controllers\ArticleController::class, 'index']);
-route::get('items',[App\Http\Controllers\ArticleController::class,'show']);
+route::get('Article',[App\Http\Controllers\ArticleController::class, 'index']);
+route::get('Article',[App\Http\Controllers\ArticleController::class,'show']);
