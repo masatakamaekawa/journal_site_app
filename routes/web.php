@@ -17,5 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-route::get('Article',[App\Http\Controllers\ArticleController::class, 'index']);
-route::get('Article',[App\Http\Controllers\ArticleController::class,'show']);
+Route::resource('articles',App\Http\Controllers\ArticleController::class);
