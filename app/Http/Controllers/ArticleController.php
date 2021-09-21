@@ -22,4 +22,25 @@ class ArticleController extends Controller
          $article = Article::find($id);
          return view('articles.show', ['article' => $article]);
      }
+
+    public function create()
+     {
+         return view('articles.create');
+     }
+
+     public function store(Request $request)
+     {
+         // インスタンスの作成
+         $article = new Article;
+
+         // 値の用意
+         $article->name = $request->name;
+         $article->writing = $request->writing;
+
+         // インスタンスに値を設定して保存
+         $article->save();
+
+         // 登録したらindexに戻る
+         return redirect('/article');
+     }
 }

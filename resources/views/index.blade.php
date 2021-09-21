@@ -14,5 +14,8 @@
              <li><a href="/articles/{{ $article->id }}">{{ $article->title }}</a></li>
          @endforeach
       </ul>
+
+      <!-- 新規登録画面へジャンプする -->
+      <a href="/articles/create">投稿</a
   </body>
   </html>
