@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>article create</title>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
+
 <body>
     <h1>新規論文投稿</h1>
     <form action="/article" method="post">
@@ -16,11 +18,12 @@
             <input type="text" name="name">
         </p>
         <p>
-            <label for="description">本文</label>
+            <label for="writing">本文</label>
             <input type="text" name="writing">
         </p>
 
         <input type="submit" value="登録">
     </form>
 </body>
+
 </html>
